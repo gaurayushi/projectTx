@@ -1,0 +1,35 @@
+
+#include <iostream>
+using namespace std;
+
+  int main()
+    {
+        int n ,rem,rev;
+        int orginal;
+        cout<<"enter the orignal value"<<endl;
+        cin>>orginal;
+        cout<<"enter the  for checking plaindrome or not number"<<endl;
+        cin>>n;
+        
+        
+       while (n!=0)
+       {
+           rem=n%10;
+          rev=rev*10+rem;
+          n/=10;
+          
+       }
+       if(orginal==rev)
+       {
+           cout<<"plaindrome"<<rev<<endl;
+       }
+         else {
+           cout<<" not plaindrome"<<rev<<endl;
+       }
+         
+         return 0;
+    }
+    
+       
+    
+  
