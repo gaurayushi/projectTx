@@ -41,3 +41,22 @@ int main() {
 
     return 0;
 }
+
+
+
+/* 
+Enter the limit: 3
+Enter elements:
+12
+23
+45
+Elements inside array:
+12
+3
+45
+Maximum element: 45
+Minimum element: 3
+
+
+
+*/
