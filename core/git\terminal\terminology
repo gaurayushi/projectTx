@@ -1,0 +1,182 @@
+# Basic Terminal Commands Notes
+---
+#### Overview:
+This set of notes covers fundamental terminal commands for navigation, file manipulation, and directory management.
+---
+#### 1. Change Directory (cd):
+
+- Command: `cd [directory_path]`
+- Usage:
+  - Change to a specific directory.
+  - Example: `cd Documents`
+
+---
+
+#### 2. Make Directory (mkdir):
+
+- Command: `mkdir [directory_name]`
+- Usage:
+  - Create a new directory.
+  - Example: `mkdir NewFolder`
+
+---
+
+#### 3. Remove (rm):
+
+- Command: `rm [file_or_directory]`
+- Usage:
+  - Remove a file or an empty directory.
+  - Example: `rm file.txt`
+
+---
+
+#### 4. Clear Screen (clear):
+
+- Command: `clear`
+- Usage:
+  - Clear the terminal screen for better visibility.
+
+---
+
+#### 5. Parent Directory (cd ..):
+
+- Command: `cd ..`
+- Usage:
+  - Move to the parent directory.
+
+---
+
+#### 6. Create Empty File (touch):
+
+- Command: `touch [file_name]`
+- Usage:
+  - Create an empty file.
+  - Example: `touch newfile.txt`
+
+---
+
+#### 7. List Contents (ls):
+
+- Command: `ls`
+- Usage:
+  - List files and directories in the current directory.
+
+---
+
+#### 8. List Detailed Contents (ls -l):
+
+- Command: `ls -l`
+- Usage:
+  - List detailed information about files and directories.
+
+---
+
+#### 9. List All Contents (ls -a):
+
+- Command: `ls -a`
+- Usage:
+  - List all files and directories, including hidden ones.
+
+---
+
+#### 10. List with Human-Readable Sizes (ls -lh):
+
+- Command: `ls -lh`
+- Usage:
+  - List files and directories with human-readable file sizes.
+
+#### Conclusion:
+These basic terminal commands form the foundation for navigating, creating, and managing files and directories in a Unix-like command-line environment.
+
+/*  demo 
+
+C:\Users\Ayushi\ayushigaur>cd..
+
+C:\Users\Ayushi>mkdir ayu
+
+C:\Users\Ayushi>cd ayu
+
+C:\Users\Ayushi\ayu>touch f1 f2 f3
+
+C:\Users\Ayushi\ayu>ls -l
+total 0
+-rw-r--r-- 1 Ayushi 197121 0 Jan 20 01:21 f1
+-rw-r--r-- 1 Ayushi 197121 0 Jan 20 01:21 f2
+-rw-r--r-- 1 Ayushi 197121 0 Jan 20 01:21 f3
+
+C:\Users\Ayushi\ayu>cat>f1
+this is f1 file
+
+
+q
+
+ndjdjjd
+
+C:\Users\Ayushi\ayu>cat f1
+this is f1 file
+
+
+q
+
+ndjdjjd
+
+C:\Users\Ayushi\ayu>cat>>f1
+this is ayushi i m adding this to show when u use cat>>f1 then this content will not get removed it will add the content with upper onen
+
+C:\Users\Ayushi\ayu>cat f1
+this is f1 file
+
+
+q
+
+ndjdjjd
+this is ayushi i m adding this to show when u use cat>>f1 then this content will not get removed it will add the content with upper onen
+
+C:\Users\Ayushi\ayu>cat>f1
+this is added now content above one was removed when u used cat>f1  it will add new content by removing earlier
+
+C:\Users\Ayushi\ayu>cat f1
+this is added now content above one was removed when u used cat>f1  it will add new content by removing earlier
+
+C:\Users\Ayushi\ayu>cd..
+
+C:\Users\Ayushi>cd ayu
+
+C:\Users\Ayushi\ayu>ls -l
+total 1
+-rw-r--r-- 1 Ayushi 197121 112 Jan 20 01:23 f1
+-rw-r--r-- 1 Ayushi 197121   0 Jan 20 01:21 f2
+-rw-r--r-- 1 Ayushi 197121   0 Jan 20 01:21 f3
+
+C:\Users\Ayushi\ayu>mkdir ari
+
+C:\Users\Ayushi\ayu>mv f1 ari
+
+C:\Users\Ayushi\ayu>ls -l
+total 0
+drwxr-xr-x 1 Ayushi 197121 0 Jan 20 01:25 ari
+-rw-r--r-- 1 Ayushi 197121 0 Jan 20 01:21 f2
+-rw-r--r-- 1 Ayushi 197121 0 Jan 20 01:21 f3
+
+C:\Users\Ayushi\ayu>cd ari
+
+C:\Users\Ayushi\ayu\ari>ls -l
+total 1
+-rw-r--r-- 1 Ayushi 197121 112 Jan 20 01:23 f1
+
+C:\Users\Ayushi\ayu\ari>rm f1
+
+C:\Users\Ayushi\ayu\ari>ls -l
+total 0
+
+C:\Users\Ayushi\ayu\ari>cd..
+
+C:\Users\Ayushi\ayu>ls -l
+total 0
+drwxr-xr-x 1 Ayushi 197121 0 Jan 20 01:25 ari
+-rw-r--r-- 1 Ayushi 197121 0 Jan 20 01:21 f2
+-rw-r--r-- 1 Ayushi 197121 0 Jan 20 01:21 f3
+
+
+
+*/
