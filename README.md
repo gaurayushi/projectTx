@@ -7,4 +7,4 @@
 - Random card shuffling
 - Score tracking</p></b></i>
 <p>bash  git clone   https://github.com/gaurayushi/.jsGame.git  </p>
-<p> click on  this link <a href="http://127.0.0.1:5500/.jsGame/memory/index.html">memory game !!</a></p>
+<p> memory game on  this link <a href="http://127.0.0.1:5500/.jsGame/memory/index.html"> click Here !!</a></p>
