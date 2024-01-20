@@ -180,3 +180,178 @@ drwxr-xr-x 1 Ayushi 197121 0 Jan 20 01:25 ari
 
 
 */
+/*   git */
+
+
+Git Basics: Cloning a Repository
+Overview
+Git is a distributed version control system (VCS) widely used in software development for tracking changes in source code. The clone command is a GitHub-specific way to copy a repository from GitHub to your local machine, allowing you to work on the code locally.
+
+Steps to Clone a Repository
+
+1. Navigate to the Repository
+Go to the GitHub repository you want to clone. You can find the repository on the GitHub website.
+
+2. Copy the Repository URL
+On the GitHub repository page, click the "Code" button. Ensure the displayed URL is the one you want to clone. You can use either HTTPS or SSH, depending on your authentication setup.
+
+3. Open Terminal or Command Prompt
+Open a terminal or command prompt on your local machine.
+
+4. Navigate to the Directory Where You Want to Clone
+Use the cd command to navigate to the directory where you want to store the local copy of the repository.
+cd path/to/your/directory
+
+5. Clone the Repository
+Use the git clone command followed by the repository URL you copied from GitHub.
+git clone repository_url
+For example:
+git clone https://github.com/example/repo.git
+
+6. View the Cloning Process
+After running the git clone command, Git will fetch the repository's content, including all branches and commits.
+bash
+Cloning into 'repository_name'...
+remote: Enumerating objects: total_count, done.
+Receiving objects: 100% (objects_count/objects_count), data_amount MiB | speed, done.
+Resolving deltas: 100% (changed_files/total_files), done.
+Conclusion
+You have successfully cloned a repository from GitHub to your local machine.
+
+
+
+bash
+git clone repository_url
+For example, if the repository URL is https://github.com/example/repo.git, the command would be:
+
+demo example
+PS C:\Users\Ayushi\Downloads\mca\git> cd githubdata
+PS C:\Users\Ayushi\Downloads\mca\git\githubdata> git clone https://github.com/gaurayushi/Virtual-Internship.git     
+Cloning into 'Virtual-Internship'...
+remote: Enumerating objects: 139, done.
+Receiving objects: 100% (139/139), 4.83 MiB | 749.00 KiB/s, done.
+Resolving deltas: 100% (33/33), done.
+
+
+
+Git Status and Basic Commands
+Git Status Overview
+The git status command in Git provides information about the state of your local repository in relation to the remote repository. It details changes in your working directory, the staging area, and the branch status concerning the remote repository.
+
+File Types in Git Status
+Changes to Be Committed:
+
+Lists modified files that have been staged (added to the index) and are ready to be committed in the next snapshot.
+
+Changes Not Staged for Commit:
+
+Lists modified files that have not been staged yet. These changes will not be part of the next commit unless explicitly staged.
+Untracked Files:
+
+Lists files in your working directory that are not part of the Git repository. Git is not tracking changes to these files.
+File Status Lifecycle
+Untracked ➔ (add the file) ➔ Unmodified ➔ (edit the file) ➔ Modified ➔ (stage the file) ➔ Staged ➔ (commit the file)
+Basic Commands
+
+Add:
+Add new or changed files in your working directory to the Git staging area.
+git add filename
+
+Commit:
+Record changes as a snapshot in the version history.
+git commit -m "commit message
+
+
+Push: Push local changes to the remote repository.
+git push origin main
+
+
+Example Usage (Inside Terminal)
+# Change to the repository directory
+cd path/to/your/repository
+
+# Add a specific file
+git add index.html
+
+# Check the status after adding
+git status
+
+# Commit the changes
+git commit -m "index.html is now committed"
+
+# Check status and push changes to the remote repository
+git status
+git push origin main
+
+
+
+
+
+
+
+
+demo example (inside terminal)
+touch git.status    
+PS C:\Users\Ayushi\Downloads\mca\git\githubdata> cd virtual-internship
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        customm.css
+        index.html
+        virtual2/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Ayushi\Downloads\mca\git\githubdata\virtual-internship> git add index.html
+PS C:\Users\Ayushi\Downloads\mca\git\githubdata\virtual-internship> git status
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        customm.css
+        virtual2/
+
+PS C:\Users\Ayushi\Downloads\mca\git\githubdata\virtual-internship> git commit  -m "index.html is now commit"       
+[main e92c0ae] index.html is now commit
+ 1 file changed, 15 insertions(+)
+ create mode 100644 index.html
+
+PS C:\Users\Ayushi\Downloads\mca\git\githubdata\virtual-internship> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        customm.css
+        virtual2/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Ayushi\Downloads\mca\git\githubdata\virtual-internship> git statusc
+
+
+
+git add .
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+        new file:   customm.css
+        new file:   virtual2/index.html
+        new file:   virtual2/readme.md
+
+PS C:\Users\Ayushi\Downloads\mca\git\githubdata\virtual-internship>  git commit  -m "now all file is commited"      
+[main 7d30275] now all file is commited
+ 3 files changed, 17 insertions(+)
+ create mode 100644 customm.css
+ create mode 100644 virtual2/index.html
+ create mode 100644 virtual2/readme.md
+
+PS C:\Users\Ayushi\Downloads\mca\git\githubdata\virtual-internship> git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\Ayushi\Downloads\mca\git\githubdata\virtual-internship> git push orgin main
