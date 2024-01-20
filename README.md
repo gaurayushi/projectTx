@@ -6,4 +6,5 @@
 -Responsive design
 - Random card shuffling
 - Score tracking</p></b></i>
-<p>bash  git clone     </p>
+<p>bash  git clone   https://github.com/gaurayushi/.jsGame.git  </p>
+<a href="http://127.0.0.1:5500/.jsGame/memory/index.html">Check Out !!</a>
