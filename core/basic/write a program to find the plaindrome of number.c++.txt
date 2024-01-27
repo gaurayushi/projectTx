@@ -1,0 +1,36 @@
+
+#include <iostream>
+
+using namespace std;
+
+int reverse(int num)
+{
+    int store = 0; // Initialize store to 0
+    while (num > 0)
+    {
+        int digit = num % 10;
+        store = store * 10 + digit;
+        num = num / 10;
+    }
+    return store; // Return the reversed number
+}
+
+int main()
+{
+    int num;
+    cout << "Enter the number: ";
+    cin >> num;
+    int original = num;
+    int reversed = reverse(num);
+
+    if (original == reversed)
+    {
+        cout << "Given number is a palindrome" << endl;
+    }
+    else
+    {
+        cout << "Given number is not a palindrome" << endl;
+    }
+
+    return 0;
+}

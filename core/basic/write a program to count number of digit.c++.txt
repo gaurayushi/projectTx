@@ -1,0 +1,24 @@
+//write a program to count the number of digit
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    int count;
+    cout<<"enter the number"<<endl;
+    cin>>num;
+    while(num>0)
+    {
+        num=num/10;
+        count++;
+    }
+    cout<<"the count of  digit"<<"::"<<count<<endl;
+    
+    return 0;
+}
+
+
+/*enter the number
+234
+the count of  digit::3
+ */

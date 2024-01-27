@@ -1,0 +1,27 @@
+//write a program to print the reverse of digit
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int num;
+         int store=0;
+         int digit;
+         cout<<"enter the number"<<endl;
+         cin>>num;
+         
+    while (num>0)
+     {
+        digit=num%10;
+         store=store*10+digit;
+         num=num/10;
+         
+     }
+     cout<<"reverse of number"<<store<<endl;
+    return 0;
+}
+/* enter the number
+123
+the  reverse of digit::321
+
+*/
