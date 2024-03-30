@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+
+background-color: black;
+color: wheat;
+}
+header nav {
+background-color: #212121;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 1;
+}
+
+header nav h1 {
+font-size: 26px;
+font-weight: 700;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+header nav form
+{
+display: flex;
+justify-content: center;
+}
+
+form input [type="text"]
+{
+flex-grow: 1;
+margin-right: 10px;
+}
+
+
+
+form input [type="text"],button[type="submit"]
+{
+    border: none;
+    font-size: 19px;
+  padding: 10px;
+  border-radius: 4px;
+}
+.recipe-details-content
+{
+display: none;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translateX(-50%,-50%);
+}
+
+form button[type="submit"]
+{
+ 
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+
+.recipe button:hover
+{
+background-color: #160707;
+}
+
+
+form button[type="submit"]:hover
+{
+ 
+    background-color: rgb(80, 26, 26);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s
+    ease-in-out;
+}
+
+/* main section */
+.recipe-container{
+text-align: center;
+margin-top: 20px;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+grid-gap:40px;
+width: 80%;
+margin: 10px auto;
+place-items: center;
+}
+
+.recipe{
+background-color: hsl(207, 31%, 6%);
+display: flex;
+flex-direction: column;
+border-radius: 6px;
+box-shadow: 0 5px 10px rgba(78,73,73,0.1),-5px,-5px,10px rgba(14, 1, 29, 0.1);
+cursor: pointer;
+max-width: 350px;
+}
+
+
+.recipe img{
+    height: 300px;
+}
+
+.recipe h3{
+font-size: 20px;
+margin-block: 5px;
+}
+.recipe p{
+font-size: 20px;
+
+}
+
+.recipe span{
+font-weight: 600px;
+}
+
+.recipe button{
+font-size: 20px;
+font-weight: 600;
+padding: 10px;
+border-radius: 5px;
+cursor: pointer;
+
+}
+@media screen and (max-width:600px){
+    header nav  {
+ flex-direction: coloumn;
+    }
+    header nav form {
+ width: 80%;
+
+    }
+}
+
