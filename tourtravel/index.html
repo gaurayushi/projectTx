@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="custom.css" rel="stylesheet"/>
+    <title>tour and travel </title>
+    <!---- bootstrap link ----->    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+     <!-- Add the Font Awesome link below -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">    
+        
+        
+        
+</head>
+  <body>
+    
+    <!-- nav start   --> 
+    <nav class="navbar navbar-expand-lg " id="navbar">
+            <div class="container-fluid">
+       
+                <a  href="#">
+                    <img  id ="navLogo" src="assest/logo.webp" alt="Logo" height="40"> <!-- Replace 'travel-logo.png' with the path to your logo file -->
+                </a>
+               
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Package</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      offer
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Service</a></li>
+                      <li><a class="dropdown-item" href="#">Gallery </a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">About</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Prize</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+
+    <!-- nav end   --> 
+
+
+ <!-- home section start -->
+ <header>
+  <div class="home">
+      <div class="content">
+        <h5>welcome to world</h5>
+      <h1 id="visit">Visit <span class="changecontent"></span></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem exercitationem praesentium ipsum magni repellendus necessitatibus aliquam dolore ratione quae recusandae, beatae porro? Atque consectetur temporibus voluptatum incidunt culpa magni. Facere. </p>  
+    
+    </div>
+    </div>
+  </header>
+    
+ <!-- home section end -->
+    
+<!-- BOOk section start -->
+<section class="book" id="book">
+  <div class="container">
+    <div class="main-text">
+      <h1><span>B</span>ook</h1>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-6 py-3 py-md-0">
+        <div class="card">
+          <img src="./assest/logo3.jpg">
+        </div>
+      </div>
+      <div class="col-md-6 py-3 py-md-0 ">
+        <form action="#">
+          <input type="text" class="form-control" placeholder="Where to" required><br>
+          <input type="text" class="form-control" placeholder="How Many" required><br>
+          <input type="text" class="form-control" placeholder="Arrival" required><br>
+          <input type="text" class="form-control" placeholder="Leaving" required><br>
+          <textarea class="form-control" rows="5"  name="text" placeholder="Enter your name & details"></textarea><br>
+        <input type="submit" value ="Book now" class="submit" required><br>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOk section start -->
+<section class="package" id="package">
+  <div class="container">
+    <div class="row" style="margin-top:30px;">
+
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./assest/logo4.jpg" alt="Card image">
+          <div class="card-body">
+            <h3>United Kingdom</h3>
+            <p>Lorem ipsum dolor sit amet consecteiusto qui blanditiis itaque...</p>
+            <div class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h6>Price <strong>$500</strong></h6>
+            <a href="#book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 (Repeat the structure for each additional card) -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./assest/logo5.jpg" alt="Card image">
+          <div class="card-body">
+            <h3>India</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sapiente...</p>
+            <div class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h6>Price <strong>$700</strong></h6>
+            <a href="#book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more cards here -->
+
+
+         <!-- Card 2 (Repeat the structure for each additional card) -->
+         <div class="col-md-4">
+          <div class="card">
+            <img src="./assest/logo6.jpg" alt="Card image">
+            <div class="card-body">
+              <h3> United State</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sapiente...</p>
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <h6>Price <strong>$700</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more cards here -->
+      
+         <div class="col-md-4">
+          <div class="card">
+            <img src="./assest/logo13.jpg" alt="Card image">
+            <div class="card-body">
+              <h3 >Africa</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sapiente...</p>
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <h6>Price <strong>$700</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+ <!-- (end) -->
+
+
+ <div class="col-md-4">
+  <div class="card">
+    <img src="./assest/logo7.jpg" alt="Card image">
+    <div class="card-body">
+      <h3>South korea</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sapiente...</p>
+      <div class="star-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <h6>Price <strong>$700</strong></h6>
+      <a href="#book">Book Now</a>
+    </div>
+  </div>
+</div>
+<!-- (end ) -->
+
+<div class="col-md-4">
+  <div class="card">
+    <img src="./assest/logo8.jpg" alt="Card image">
+    <div class="card-body">
+      <h3>London</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sapiente...</p>
+      <div class="star-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <h6>Price <strong>$700</strong></h6>
+      <a href="#book">Book Now</a>
+    </div>
+  </div>
+</div>
+<!-- (end additional card) -->
+    </div>
+  </div>
+</section>
+
+<!-- card section end -->
+
+<!-- Other Services Section -->
+<section class="other-services" id="otherServices">
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <!-- Food Service -->
+      <div class="service">
+        <img src="./assest/food.png" alt="Food Service" class="service-image">
+        <h3>Food</h3>
+        <p>Explore culinary delights from around the world.</p>
+      </div>
+
+      <!-- Hotel Rooms Service -->
+      <div class="service">
+        <img src="assest/plane.jpg" alt="Hotel Rooms" class="service-image">
+        <h3>Hotel Rooms</h3>
+        <p>Stay in comfort with our handpicked accommodations.</p>
+      </div>
+
+      <!-- Special Offers Service -->
+      <div class="service">
+        <img src="assest/offer.jpg" alt="Special Offers" class="service-image">
+        <h3>Special Offers</h3>
+        <p>Exclusive deals to make your travels unforgettable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- about us  -->
+
+
+<section class="about-us" id="about">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="./assest/logo14.webp" alt="About Us" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <h2>About Us</h2>
+        <p>We are a passionate team of travelers dedicated to bringing you the best travel experiences from around the globe. Our mission is to make travel accessible, easy, and unforgettable for everyone.</p>
+        <p>With years of experience, we specialize in curating tailor-made journeys that meet your unique travel desires. Let us take you on an adventure where culture, history, and natural beauty come alive.</p>
+        <a href="#contact" class="btn-learn-more">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+</body>
+</html>
